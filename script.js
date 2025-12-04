@@ -55,3 +55,11 @@ ProductProperties,applyDiscount(products, 0.1); //applying 10% discount
 for (let i = 0; i < products.length; i++){
     console.log(products[i].toString());//displaying the updated products
 }
+
+//part 4
+//created store class
+class store {
+    constructor() {
+        this.inventory = []; //inventory array to stores products and PerishableProducts 
+    }
+}

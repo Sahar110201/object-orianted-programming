@@ -26,13 +26,13 @@ class PerishableProductProperties extends ProductProperties {
     }     
 }
 //two instances of class with simple data
-const maggie = new PerishableProductProperties(
+const maggie = new PerishableProductProperties( //new used to create instance
     "Maggie", //name of product
     1.00, //product price
     50, //product quantity
     "2026-03-18", //expiration date
 )
-const milk = new PerishableProductProperties(
+const milk = new PerishableProductProperties( //new used to create instance
     "Milk", //name of product
     15.00, //product price
     100, //product quantity

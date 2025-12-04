@@ -74,12 +74,13 @@ class store {
         }
         return totalValue; //returns value
     }
+    //function tht finds product by its name and returns it or returns null if its not found
     findProductByName(name) {
-        for (const product of this.inventory) {
-            if (product.name === name) {
-                return product;
+        for (const product of this.inventory) { //checking product in inventory
+            if (product.name === name) { //checking if product name entered is equal to name
+                return product;//returning  product by its name
             }
         }
-        return null;
+        return null; //returning null if its not there
     }
 }

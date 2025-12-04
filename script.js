@@ -33,8 +33,8 @@ const maggie = new PerishableProductProperties(
     "2026-03-18", //expiration date
 )
 const milk = new PerishableProductProperties(
-    "Milk",
-    15.00,
-    100,
-    "2026-01-21",
+    "Milk", //name of product
+    15.00, //product price
+    100, //product quantity
+    "2026-01-21", //expiration date
 )

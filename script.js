@@ -32,3 +32,9 @@ const maggie = new PerishableProductProperties(
     50,
     "2026-03-18",
 )
+const milk = new PerishableProductProperties(
+    "Milk",
+    15.00,
+    100,
+    "2026-01-21",
+)

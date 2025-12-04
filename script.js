@@ -38,3 +38,6 @@ const milk = new PerishableProductProperties( //new used to create instance
     100, //product quantity
     "2026-01-21", //expiration date
 )
+//using console.log to display the objects using toString()
+console.log(maggie.toString());
+console.log(milk.toString());

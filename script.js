@@ -25,3 +25,10 @@ class PerishableProductProperties extends ProductProperties {
         return `Product: ${this.name}, Price: $${this.price}, ${this.quantity}, Expiration Date: ${this.expirationDate}`;
     }     
 }
+//two instances of class with simple data
+const maggie = new PerishableProductProperties(
+    "Maggie",
+    1.00,
+    50,
+    "2026-03-18",
+)

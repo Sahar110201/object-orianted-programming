@@ -84,3 +84,33 @@ class store {
         return null; //returning null if its not there
     }
 }
+
+//part 5
+//5 products, including at least 2 PerishableProduct objects.
+const apple = new ProductProperties( //new used to create instance
+    "Apple", //name of product
+    4.00, //product price
+    100, //product quantity
+)
+const banana = new ProductProperties( //new used to create instance
+    "Banana", //name of product
+    10.00, //product price
+    100, //product quantity
+)
+const bread = new ProductProperties( //new used to create instance
+    "Bread", //name of product
+    14.00, //product price
+    80, //product quantity
+)
+const cream = new PerishableProductProperties( //new used to create instance
+    "Cream", //name of product
+    8.00, //product price
+    30, //product quantity
+    "2026-05-21", //expiration date
+)
+const chocolate = new PerishableProductProperties( //new used to create instance
+    "Chocolate", //name of product
+    5.00, //product price
+    1000, //product quantity
+    "2026-08-08", //expiration date
+)

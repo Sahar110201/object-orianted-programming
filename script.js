@@ -8,4 +8,7 @@ class ProductProperties { //created the base class
     getTotalValue() { //this returns the total vaule of products in stock by multiplying price with quantity
         return this.price * this.quantity;
     }
+    toString() { //this returns the string representation or rather product description 
+        return `Product: ${this.name}, Price: $${this.price}, ${this.quantity}`;
+    }
 }

@@ -12,3 +12,8 @@ class ProductProperties { //created the base class
         return `Product: ${this.name}, Price: $${this.price}, ${this.quantity}`;
     }
 }
+
+//created subclass PerishableProductProperties that will inherit properties from class ProductProperties
+class PerishableProductProperties extends ProductProperties {
+    
+}

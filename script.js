@@ -16,6 +16,6 @@ class ProductProperties { //created the base class
 //created subclass PerishableProductProperties that will inherit properties from class ProductProperties
 class PerishableProductProperties extends ProductProperties {
     constructor(name, price, quantity, expirationDate) {//added a new propertiy expirationDate to already exisiting properties
-    
+    super(name, price, quantity)//calling super() method constructor
     }
 }

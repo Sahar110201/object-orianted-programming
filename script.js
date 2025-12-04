@@ -13,6 +13,10 @@ class ProductProperties { //created the base class
     toString() { //this returns the string representation or rather product description 
         return `Product: ${this.name}, Price: $${this.price}, ${this.quantity}`;
     }
+    //part 3
+    static applyDiscount(product, discount) { //added static method. You made a typo in in your instructions with the wrong class name. 
+
+    }
 }
 
 //part 2

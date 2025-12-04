@@ -14,8 +14,10 @@ class ProductProperties { //created the base class
         return `Product: ${this.name}, Price: $${this.price}, ${this.quantity}`;
     }
     //part 3
-    static applyDiscount(product, discount) { //added static method. You made a typo in in your instructions with the wrong class name. 
-
+    static applyDiscount(products, discount) { //added static method. You made a typo in in your instructions with the wrong class name. 
+        products.forEach(product => {
+            product.price = product.price * (1 - discount); //reduced price by discount percentage
+        });
     }
 }
 
@@ -45,3 +47,7 @@ const milk = new PerishableProductProperties( //new used to create instance
 //using console.log to display the objects using toString()
 console.log(maggie.toString());
 console.log(milk.toString());
+
+//part 3
+const products = [maggie, milk]; //array of products
+ProductProperties,applyDiscount(products, 0.1); //applying 10% discount

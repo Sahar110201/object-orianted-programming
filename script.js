@@ -27,10 +27,10 @@ class PerishableProductProperties extends ProductProperties {
 }
 //two instances of class with simple data
 const maggie = new PerishableProductProperties(
-    "Maggie",
-    1.00,
-    50,
-    "2026-03-18",
+    "Maggie", //name of product
+    1.00, //product price
+    50, //product quantity
+    "2026-03-18", //expiration date
 )
 const milk = new PerishableProductProperties(
     "Milk",

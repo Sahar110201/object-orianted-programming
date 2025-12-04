@@ -74,4 +74,12 @@ class store {
         }
         return totalValue; //returns value
     }
+    findProductByName(name) {
+        for (const product of this.inventory) {
+            if (product.name === name) {
+                return product;
+            }
+        }
+        return null;
+    }
 }

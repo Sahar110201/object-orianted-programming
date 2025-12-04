@@ -114,3 +114,30 @@ const chocolate = new PerishableProductProperties( //new used to create instance
     1000, //product quantity
     "2026-08-08", //expiration date
 )
+// Create store and add products
+const myStore = new store();
+myStore.addProducts(apple);
+myStore.addProducts(banana);
+myStore.addProducts(bread);
+myStore.addProducts(cream);
+myStore.addProducts(chocolate);
+
+// Printing the total inventory value before discount using console.log
+console.log(`Total Inventory Value before discount is: $${myStore.getInventoryValue().toFixed(2)}`);
+
+// Apply 15% discount to all products
+ProductProperties.applyDiscount(myStore.inventory, 0.15);
+
+// Printing  total inventory value after discount using console.log
+console.log("Total Inventory Value after 15% discount: $" + myStore.getInventoryValue().toFixed(2));
+
+// Finding and printing a specific product by it's name
+const productNameToFind = "Cream";
+const findProduct = myStore.findProductByName(productNameToFind);
+
+//using if statement to find and print specific product by its name
+if (findProduct) {
+    console.log(findProduct.toString());
+} else {
+    console.log(`${productNameToFind} is not found`);
+}

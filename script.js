@@ -15,9 +15,9 @@ class ProductProperties { //created the base class
     }
     //part 3
     static applyDiscount(products, discount) { //added static method. You made a typo in in your instructions with the wrong class name. 
-        products.forEach(product => {
+        for (const product of products) {
             product.price = product.price * (1 - discount); //reduced price by discount percentage
-        });
+        };
     }
 }
 
@@ -51,3 +51,7 @@ console.log(milk.toString());
 //part 3
 const products = [maggie, milk]; //array of products
 ProductProperties,applyDiscount(products, 0.1); //applying 10% discount
+
+for (let i = 0; i < products.length; i++){
+    console.log(products[i].toString());//displaying the updated products
+}

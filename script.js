@@ -50,7 +50,7 @@ console.log(milk.toString());
 
 //part 3
 const products = [maggie, milk]; //array of products
-ProductProperties,applyDiscount(products, 0.1); //applying 10% discount
+ProductProperties.applyDiscount(products, 0.1); //applying 10% discount
 
 for (let i = 0; i < products.length; i++){
     console.log(products[i].toString());//displaying the updated products
@@ -58,11 +58,11 @@ for (let i = 0; i < products.length; i++){
 
 //part 4
 //created store class
-class store {
+class Store {
     constructor() {
         this.inventory = []; //inventory array to stores products and PerishableProducts 
     }
-    addProducts(product) {
+    addProduct(product) {
         this.inventory.push(product); //adds a product to the inventory
     }
 
@@ -115,12 +115,12 @@ const chocolate = new PerishableProductProperties( //new used to create instance
     "2026-08-08", //expiration date
 )
 // Create store and add products
-const myStore = new store();
-myStore.addProducts(apple);
-myStore.addProducts(banana);
-myStore.addProducts(bread);
-myStore.addProducts(cream);
-myStore.addProducts(chocolate);
+const myStore = new Store();
+myStore.addProduct(apple);
+myStore.addProduct(banana);
+myStore.addProduct(bread);
+myStore.addProduct(cream);
+myStore.addProduct(chocolate);
 
 // Printing the total inventory value before discount using console.log
 console.log(`Total Inventory Value before discount is: $${myStore.getInventoryValue().toFixed(2)}`);
